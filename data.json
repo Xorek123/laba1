@@ -1,0 +1,9 @@
+{
+    "Dishes": [
+        {
+            "name": "pasta",
+            "weight": 45,
+            "price": 65
+        }
+    ]
+}
