@@ -144,8 +144,8 @@ class menu:
         root = ET.Element('Drinks')
         for i in data['Drinks']:
             s = ET.SubElement(root, 'name').set('name', str(i['name']))
-            y = ET.SubElement(s, 'price').set('price', str(i['price']))
-            h = ET.SubElement(s, 'portion').set('portion', str(i['portion']))
+            y = ET.SubElement(root, 'price').set('price', str(i['price']))
+            h = ET.SubElement(root, 'portion').set('portion', str(i['portion']))
         tree = ET.ElementTree(root)
         tree.write("sample.xml")
 
